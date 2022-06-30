@@ -1,15 +1,17 @@
 #ifndef FILE_HOLBERTON
 #define FILE_HOLBERTON
 
-char *_memset(char *s, char b, unsigned int n);
-char *_memcpy(char *dest, char *src, unsigned int n);
-char *_strchr(char *s, char c);
-unsigned int _strspn(char *s, char *accept);
-char *_strpbrk(char *s, char *accept);
-char *_strstr(char *haystack, char *needle);
-void print_chessboard(char (*a)[8]);
+#include <stdlib.h>
+#include <stdio.h>
+
 int _putchar(char c);
-void print_diagsums(int *a, int size);
-void set_string(char **s, char *to);
+void *malloc_checked(unsigned int b);
+char *string_nconcat(char *s1, char *s2, unsigned int n);
+void *_calloc(unsigned int nmemb, unsigned int size);
+int *array_range(int min, int max);
+void errors(void);
+int _strlen(char *s);
+int is_digit(char *s);
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 
 #endif
